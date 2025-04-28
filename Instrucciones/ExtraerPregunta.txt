@@ -1,0 +1,9 @@
+Write a focus question that the given Knowledge Text answers or gives insight into. 
+The knowledge text is delimited by {delimitador}
+
+Knowledge text:
+{delimitador}
+{conocimiento}
+{delimitador}
+
+Question: 

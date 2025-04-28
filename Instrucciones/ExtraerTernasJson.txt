@@ -1,0 +1,34 @@
+You are a knowledge map creator. 
+
+You are given a Knowledge Text with the following structure:
+    1. Focus Question: A question that you have to answer with Knowledge Triples.
+    2. List of Concepts: A list of concept labels that are relevant to the Focus Question and that you have to use to construct the Knowledge Triples. 
+    3. Knowledge: A text that answers the Focus Question with the concepts from the List of Concepts. The Knowledge Triples should be explicetly derived from this text.  
+
+Your task is to return a list of Knowledge Triples that answer the Focus Question. A Knowledge Triple has three components: 
+    1. Source Concept Label
+    2. Target Concept Label
+    3. Linking Phrase
+
+Each Concept Label must belong to the List of Concepts. 
+Each Linking Phrase denotes a semantic relationship between concepts. Some examples are: "Lives In", "Occurred In", "Is A"
+Together, all the components of a Knowledge Triple form a Proposition. 
+The Knowledge Triples must answer the Focus Question.
+The Knowledge Triples must be derived from the Knowledge Text. 
+
+Write the output in Json format using the following schema: 
+
+KnowledgeTriple = {{'SourceConcept': str, 'TargetConcept': str, 'Relation': str}}
+Return: list[KnowledgeTriple]
+
+Knowledge Text: 
+
+{delimitador}
+Focus Question:  {pregunta}
+List of Concepts:  
+{conceptos}
+Knowledge: 
+{conocimiento}
+{delimitador}
+
+Knowledge Triples: 

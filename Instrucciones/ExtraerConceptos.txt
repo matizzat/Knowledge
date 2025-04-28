@@ -1,0 +1,23 @@
+You are a knowledge map creator. 
+
+You are given a Knowledge Text, delimited by {delimitador}, with the following structure:
+    1. Focus Question: A question that you have to answer listing relevant Concept Labels. 
+    2. Knowledge: A text that answers the Focus Questions using relevant concepts. The Concept Labels you extract should be explicitly mentioned or derived from this text.
+
+Your task is to write a List of Concept Labels that we will later use to answer the Focus Question. 
+Each Concept Label has at most three words. The Concept Labels should be explicitly mentioned or derived from the Knowledge Text. Include the Concepts mentioned in the Focus Question.
+
+The output should have the following format:
+* Concept Label
+* Concept Label
+...
+* Concept Label
+
+Knowledge text: 
+{delimitador}
+Focus Question: {pregunta}
+Knowledge:
+{conocimiento}
+{delimitador}
+
+List of Concept Labels:
